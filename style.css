@@ -71,10 +71,33 @@ body {
       height: 40px;
 
   }
-  .bkndBox {
+  .bkndBoxLeft {
       width: 260px;
       height: 415px;
       background-color: gainsboro;
       display: inline-block;
       padding: 10px;
+    
   }
+
+  .bkndBoxRight {
+    width: 70%;
+    height: 200px;
+    border-right: 1px solid rgb(117, 117, 117);
+    border-left: 1px solid rgb(117, 117, 117);
+    border-bottom: 1px solid rgb(117, 117, 117);
+    display: inline-block;
+    padding: 15px;
+    float: right;
+}
+.blueBoxes {
+    display: inline-block;
+    float: left;
+    background-color: hotpink;
+
+}
+#currCity {
+    font-size: 26px;
+    font-weight: 600;
+}
+
