@@ -81,7 +81,7 @@ body {
   }
 
   .bkndBoxRight {
-    width: 70%;
+    width: 75%;
     height: 200px;
     border-right: 1px solid rgb(117, 117, 117);
     border-left: 1px solid rgb(117, 117, 117);
@@ -93,11 +93,30 @@ body {
 .blueBoxes {
     display: inline-block;
     float: left;
-    background-color: hotpink;
-
+    margin-top: 15px;
+    margin-left: -15px;
+  
+}
+h4 {
+  font-weight: 500;
 }
 #currCity {
     font-size: 26px;
     font-weight: 600;
+    float: left;
+    margin-bottom: 5px;
+  }
+#currDate {
+  font-size: 26px;
+  float: left;
+  margin-bottom: 5px;
+  
 }
 
+.stats {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 12px;
+
+
+}
