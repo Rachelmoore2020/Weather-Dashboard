@@ -27,6 +27,7 @@ body {
     width: 80%;
     background: #f1f1f1;
     margin-top: 0px;
+    margin-bottom: 15px;
 
   }
   
@@ -60,6 +61,20 @@ body {
       font-weight: 900;
       font-size: 14px;
       margin-bottom: 0px;
+   
+  }
+  .list-group {
+      width: 240px;
 
+  }
+  .list-group-item {
+      height: 40px;
 
+  }
+  .bkndBox {
+      width: 260px;
+      height: 415px;
+      background-color: gainsboro;
+      display: inline-block;
+      padding: 10px;
   }
