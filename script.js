@@ -4,7 +4,7 @@ var hour = parseInt(moment().format("HH"));
 var userInput = document.getElementById("userInput").value;
 // var localStore = 
 var cityList = ["#city1", "#city2", "#city3", "#city4", "#city5", "#city6", "#city7", "#city8"]
-console.log("cityList", cityList[i]);
+
 
 function postDate() {
   var postDate = document.getElementById("currDate");
@@ -14,21 +14,18 @@ function postDate() {
 postDate()
 
 
-
 // When user hits the search button user Input gets put into City text area
 document.getElementById("submit").addEventListener("click", postList());
 
 function postList() {
-  for (let i = 0; i < cityList.length; i++);
-console.log("cityList", cityList[i]);
-  // document.getElementById(cityList[i]).innerHTML = userInput
-
-  // console.log("userInput: ", userInput);
-  // window.localStorage.setItem("userInput", JSON.stringify(userInput));
-				console.log("userInput: ", userInput);
-  
+  for (let i = 0; i < cityList.length; i++) {
+  document.getElementById(cityList[i]).innerHTML = userInput
+  console.log("cityList", cityList[i]);
+  console.log("userInput: ", userInput);
+  window.localStorage.setItem("userInput", JSON.stringify(userInput));
+				
 };
-
+};
 
 
 
