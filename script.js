@@ -1,9 +1,13 @@
 
 var date = moment().format("MMM Do YYYY");
 var hour = parseInt(moment().format("HH"));
+var userInput = document.getElementById("userInput").value;
+// var localStore = 
+var cityList = ["#city1", "#city2", "#city3", "#city4", "#city5", "#city6", "#city7", "#city8"]
+console.log("cityList", cityList[i]);
 
 function postDate() {
-  var postDate= document.getElementById("currDate");
+  var postDate = document.getElementById("currDate");
   postDate.textContent = date;
   console.log(date)
 }
@@ -11,7 +15,24 @@ postDate()
 
 
 
-  // Format Dates in Any Timezone
+// When user hits the search button user Input gets put into City text area
+document.getElementById("submit").addEventListener("click", postList());
+
+function postList() {
+  for (let i = 0; i < cityList.length; i++);
+console.log("cityList", cityList[i]);
+  // document.getElementById(cityList[i]).innerHTML = userInput
+
+  // console.log("userInput: ", userInput);
+  // window.localStorage.setItem("userInput", JSON.stringify(userInput));
+				console.log("userInput: ", userInput);
+  
+};
+
+
+
+
+// Format Dates in Any Timezone
 // var jun = moment("2014-06-01T12:00:00Z");
 // var dec = moment("2014-12-01T12:00:00Z");
 

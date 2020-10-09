@@ -95,7 +95,6 @@ body {
     float: left;
     margin-top: 15px;
     margin-left: -15px;
-  
 }
 h4 {
   font-weight: 500;
@@ -118,5 +117,12 @@ h4 {
   font-size: 12px;
   line-height: 12px;
 
-
+}
+.weekDay {
+  background-color: #0b7dda;
+  width: 150px;
+  height: 120px;
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
 }
