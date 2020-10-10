@@ -23,10 +23,13 @@
     <div class="bkndBoxLeft"><p class="thick">Search for a City:</p>
     
     <form class="example" class="searchBtn" style="margin:left;max-width:250px">
-        <input type= "text" id="userCity">
-        <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+        <!-- <input type= "text" id="userCity"> -->
+        <textarea class="textArea" id="userCity"></textarea>
+        <button onclick="postList()" type="button" id="submit"><i class="fa fa-search"></i></button>
        
     </form>
+
+
     <ul class="list-group">
         <li class="list-group-item" id="city1"></li>
         <li class="list-group-item" id="city2"></li>
