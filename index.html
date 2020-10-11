@@ -20,100 +20,82 @@
         <div class="jumbotron jumbotron-fluid">
             <h1 class="display-4">Weather Dashboard</h1>
         </div>
-    <div class="bkndBoxLeft"><p class="thick">Search for a City:</p>
-    
-    <form class="example" class="searchBtn" style="margin:left;max-width:250px">
-        <!-- <input type= "text" id="userCity"> -->
-        <textarea class="textArea" id="userCity"></textarea>
-        <button onclick="postList()" type="button" id="submit"><i class="fa fa-search"></i></button>
-       
-    </form>
+        <div class="bkndBoxLeft">
+            <p class="thick">Search for a City:</p>
+
+            <form class="example" class="searchBtn" style="margin:left;max-width:250px">
+                <!-- <input type= "text" id="userCity"> -->
+                <textarea class="textArea" id="userCity"></textarea>
+                <button onclick="postList()" type="button" id="submit"><i class="fa fa-search"></i></button>
+
+            </form>
 
 
-    <ul class="list-group">
-        <li class="list-group-item" id="city1"></li>
-        <li class="list-group-item" id="city2"></li>
-        <li class="list-group-item" id="city3"></li>
-        <li class="list-group-item" id="city4"></li>
-        <li class="list-group-item" id="city5"></li>
-        <li class="list-group-item" id="city6"></li>
-        <li class="list-group-item" id="city7"></li>
-        <li class="list-group-item" id="city8"></li>
-    </ul>
-    </div>
-    <!-- <div class="wrapper" -->
-    <div class="bkndBoxRight">
-        <span>
-            <p id="currCity">City:&nbsp;</p> 
-        <span><p id="currDate" id="lead">Date</p></span>
-    <br>
-    <br>
-    
+            <ul class="list-group">
+                <li class="list-group-item" id="city1"></li>
+                <li class="list-group-item" id="city2"></li>
+                <li class="list-group-item" id="city3"></li>
+                <li class="list-group-item" id="city4"></li>
+                <li class="list-group-item" id="city5"></li>
+                <li class="list-group-item" id="city6"></li>
+                <li class="list-group-item" id="city7"></li>
+                <li class="list-group-item" id="city8"></li>
+            </ul>
+        </div>
+        <!-- <div class="wrapper" -->
+        <div class="bkndBoxRight">
+            <span>
+            <p id="currCity">City:&nbsp;</p>
+            <span>
+                <p id="currDate" id="lead">Date</p>
+            </span>
+            <br>
+            <br>
+
             <p class="stats" id="temp">Temperature:</p>
             <p class="stats" id="humidity">Humidity:</p>
             <p class="stats" id="wind">Wind Speed:</p>
             <p class="stats" id="uv">UV Index:</p>
 
-            <div class="blueBoxes">
-                <p><h4>5-Day Forecast:</h4></p>
+    <div class="blueBoxes">
+        <p>
+        <h4>5-Day Forecast:</h4>
+        </p>
+        <div class="weekDay">
+            <p class="smallDate" id="Date1">Date</p>
+        </div>
+    <div class="weekDay">
+        <p class="smallDate" id="Date1">Date</p>
+    </div>
+        <div class="weekDay">
+            <p class="smallDate" id="Date1">Date</p>
+        </div>
+            <div class="weekDay">
+                <p class="smallDate" id="Date1">Date</p>
+            </div>
                 <div class="weekDay">
                     <p class="smallDate" id="Date1">Date</p>
-                    <div class="weekDay">
-                        <p class="smallDate" id="Date1">Date</p>
-
-                        <!-- <div class="weekDay">
-                            <p class="smallDate" id="Date1">Date</p>
-
-                            <div class="weekDay">
-                                <p class="smallDate" id="Date1">Date</p>
-
-                                <div class="weekDay">
-                                    <p class="smallDate" id="Date1">Date</p>
-                 -->
-
-
-    
                 </div>
-            </div>
-        
-        
-        </div>
-        
-        <br>
-        <br>
-        <br>
-        <!-- <div class="weekDay"> -->
-            <!-- <p class="smallDate" id="Date1">Date</p> -->
-       <button type="button" class="btn btn-secondary btn-sm">Go Back</button> 
+                  
+                        
+                             
 
+                            <script src="moment.js"></script>
 
-        
+                            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                                crossorigin="anonymous"></script>
 
-    <!-- </div> -->
-
-
-
-
-
-
-
-    
-</div>
-<script src="moment.js"></script>
-    
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-        
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="script.js"></script>   
-    </body>
+                            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                                crossorigin="anonymous"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                                crossorigin="anonymous"></script>
+                            <script
+                                src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+                            <script src="script.js"></script>
+</body>
 
 </html>
