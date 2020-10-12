@@ -34,7 +34,7 @@ function postList() {
       url: queryURL,
       method: "GET"
     })
-    console.log(queryURL)
+    
       //  We store all of the retrieved data inside of an object called "response"
       .then(function(response) {
         console.log(response)
