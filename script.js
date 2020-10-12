@@ -13,7 +13,6 @@ postDate()
 
 // When user hits the search button user Input gets put into City text area
 // document.getElementsById("submit").addEventListener("click", (postList))
-
 function postList() {
   var userInput = document.getElementById("userCity").value;
   userSelectedCity.push(userInput);
@@ -35,16 +34,21 @@ function postList() {
       url: queryURL,
       method: "GET"
     })
+    console.log(queryURL)
       //  We store all of the retrieved data inside of an object called "response"
-      // .then(function(response) {
-      //   console.log(response);
+      .then(function(response) {
+        console.log(response)
 
-      $.getJSON("https://api.openweathermap.org/data/2.5/find?q=" + userSelectedCity[i] + "&appid=bb55783c8d612e6ce0920236575bef0d", function(data) {
-        console.log(data);
-      })
+      // $.getJSON("https://api.openweathermap.org/data/2.5/find?q=" + userSelectedCity[i] + "&appid=bb55783c8d612e6ce0920236575bef0d", function(data) {
+      //   console.log(data);
+      // })
     
 //  Transfer content to HTML
     //  $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+
+    // var iconCode = response.weather[0].icon;
+    // var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+
      $("#wind").text("Wind Speed: " + response.wind.speed);
      $("#humidity").text("Humidity: " + response.main.humidity);
 
@@ -59,6 +63,6 @@ function postList() {
      console.log("Wind Speed: " + response.wind.speed);
      console.log("Humidity: " + response.main.humidity);
      console.log("Temperature (F): " + tempF);
-    };
-  };   
-    
+    })
+  } 
+}
