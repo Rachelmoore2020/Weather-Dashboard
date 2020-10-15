@@ -131,3 +131,18 @@ h4 {
   float: left;
   margin-bottom: 15px;
 }
+.smallDate {
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#icon {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.lrgIcon {
+  position: relative; bottom: 5px;
+}
