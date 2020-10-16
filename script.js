@@ -64,7 +64,7 @@ function postList() {
 
         // add temp content to html
         //  $("#temp").text("Temperature (K) " + data.list[0].main.temp);
-        $("#temp").text("Temperature " + tempF.toFixed(0) + "°F");
+        $("#temp").text("Temperature: " + tempF.toFixed(0) + "°F");
         lat = (data.list[0].coord.lat);
         lon = (data.list[0].coord.lon);
         uvData()
@@ -87,10 +87,33 @@ function postList() {
     })
     .then(function (data) {
       console.log("response", data)
-    $("#uv").text("UV Index:" + data.value);
-  })
+      var uvNum = (data.value)
+      console.log(uvNum)
+      // if (uvNum <= 2) {
+      //   document.getElementsByClassName('riskFac').id = "low";
+      // }  else if (uvNum > 2 && uvNum <= 5 ) {
+      //   document.getElementsByClassName('riskFac').id = "mod";
+      // } else if (uvNum > 5 && uvNum <= 7 ) {
+      //   document.getElementsByClassName('riskFac').id = "high";
+      // } else if (uvNum > 7 && uvNum <= 10 ) {
+      //   document.getElementsByClassName('riskFac').id = "vHigh";
+      //   
 
-}
+      if (uvNum <= 2) {
+        $('.riskFac').css('background-color', 'green');
+      } else if (uvNum > 2 && uvNum <= 5 ) {
+        $('.riskFac').css('background-color', 'teal');
+      } else if (uvNum > 5 && uvNum <= 7 ) {
+        $('.riskFac').css('background-color', 'orange');
+      } else if (uvNum > 7 && uvNum <= 10 ) {
+        $('.riskFac').css('background-color', 'red');
+        
+      }
+      $(".riskFac").text(uvNum);
+      });
+    }
+
+
 
 
 // --------------------------gets 5 day forecast-------------------------------------------
@@ -109,10 +132,10 @@ function fiveDay() {
         .then(function (data) {
           console.log("response", data)
 
-        // $("#date1").text(data.list[2].dt_txt);
-        // var day = moment().add(1, 'days').calendar();
-        // var day = moment().format("MMM Do");
-
+        var date1 = (data.list[2].dt_txt)
+        var str = date1
+        res = str.slice(5, 10)
+        $("#date1").text(res);
         $("#hum1").text("Humidity: " + data.list[2].main.humidity + "%");
         var icon = "http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png";
         $("#icon1").attr("src", icon);
@@ -122,7 +145,10 @@ function fiveDay() {
 
 
         // --------------Five Day Forecast Weather: Day 2 -----------------
-        $("#date2").text(data.list[10].dt_txt);
+        var date1 = (data.list[10].dt_txt)
+        var str = date1
+        res = str.slice(5, 10)
+        $("#date2").text(res);
         $("#hum2").text("Humidity: " + data.list[11].main.humidity + "%");
         var icon = "http://openweathermap.org/img/w/" + data.list[10].weather[0].icon + ".png";
         $("#icon2").attr("src", icon);
@@ -131,7 +157,10 @@ function fiveDay() {
         $("#temp2").text("Temperature: " + tempF.toFixed(0) + "°F");
 
         // --------------Five Day Forecast Weather: Day 3 -----------------
-        $("#date3").text(data.list[18].dt_txt);
+        var date1 = (data.list[18].dt_txt)
+        var str = date1
+        res = str.slice(5, 10)
+        $("#date3").text(res);
         $("#hum3").text("Humidity: " + data.list[18].main.humidity + "%");
         var icon = "http://openweathermap.org/img/w/" + data.list[18].weather[0].icon + ".png";
         $("#icon3").attr("src", icon);
@@ -140,7 +169,10 @@ function fiveDay() {
         $("#temp3").text("Temperature: " + tempF.toFixed(0) + "°F");
 
         // --------------Five Day Forecast Weather: Day 4 -----------------
-        $("#date4").text(data.list[26].dt_txt);
+        var date1 = (data.list[26].dt_txt)
+        var str = date1
+        res = str.slice(5, 10)
+        $("#date4").text(res);
         $("#hum4").text("Humidity: " + data.list[26].main.humidity + "%");
         var icon = "http://openweathermap.org/img/w/" + data.list[26].weather[0].icon + ".png";
         $("#icon4").attr("src", icon);
@@ -149,7 +181,10 @@ function fiveDay() {
         $("#temp4").text("Temperature: " + tempF.toFixed(0) + "°F");
 
         // --------------Five Day Forecast Weather: Day 5 -----------------
-        $("#date5").text(data.list[34].dt_txt);
+        var date1 = (data.list[34].dt_txt)
+        var str = date1
+        res = str.slice(5, 10)
+        $("#date5").text(res);
         $("#hum5").text("Humidity: " + data.list[34].main.humidity + "%");
         var icon = "http://openweathermap.org/img/w/" + data.list[34].weather[0].icon + ".png";
         $("#icon5").attr("src", icon);

@@ -117,8 +117,9 @@ h4 {
 
 .stats {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 12px;
+  font-weight: 500;
 
 }
 .weekDay {
@@ -136,21 +137,48 @@ h4 {
 }
 .smallDate {
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 0px;
+  line-height: 12px;
 }
 
-#date1  {
-  font-size: 16px;
+#date1, #date2, #date3, #date4, #date5  {
+  font-size: 18px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
-#icon {
-  margin-bottom: 25px;
-  margin-top: 20px;
+#icon1, #icon2, #icon3, #icon4, #icon5 {
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 .lrgIcon {
   position: relative; bottom: 5px;
+}
+
+#low {
+background-color: green;
+width: 230px;
+padding: 4px;
+color: white;
+}
+#mod {
+  background-color: yellow;
+  width: 230px;
+padding: 4px;
+color: white;
+}
+#high {
+  background-color: orange;
+  width: 230px;
+padding: 4px;
+color: white;
+}
+#vHigh {
+  background-color:red;
+  width: 230px;
+padding: 4px;
+color: white;
 }
