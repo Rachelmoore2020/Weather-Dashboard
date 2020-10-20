@@ -6,6 +6,9 @@ The weather dashboard allows a user to search any city and obtain up to date wea
 
 the website includes other visual references in terms of weather icons that add to the aesthetics of the page and help the user gather weather information quickly.
 
+The Weather Dashboard can be tried here:<br>
+https://rachelmoore2020.github.io/Weather-Dashboard/.
+
 
 DEMO<br>
 ![Weather](https://user-images.githubusercontent.com/68473729/96623472-6e242d80-12d9-11eb-84cb-a7ce10ebc405.gif)
