@@ -21,8 +21,9 @@ postData()
 // --------------When user hits the search button user Input gets put into City text area---------------------------
 
 function postList() {
+  
   var userInput = document.getElementById("userCity").value;
-
+  
   var localStore = JSON.parse(localStorage.getItem("userInput")) || []
   userSelectedCity.push(userInput)
   localStore.push(userInput);
@@ -48,7 +49,7 @@ function postList() {
       url: queryURL,
       method: "GET"
     })
-
+    
       //  We store all of the retrieved data inside of an object called "data"
       .then(function (data) {
         console.log("response", data)
@@ -69,7 +70,11 @@ function postList() {
         lon = (data.list[0].coord.lon);
         uvData()
       })
+      
+    
   }
+  
+
 }
 
 // -------------------------------Gets UV index------------------------------------------
@@ -89,6 +94,7 @@ function postList() {
       console.log("response", data)
       var uvNum = (data.value)
       console.log(uvNum)
+
       // if (uvNum <= 2) {
       //   document.getElementsByClassName('riskFac').id = "low";
       // }  else if (uvNum > 2 && uvNum <= 5 ) {
@@ -97,8 +103,7 @@ function postList() {
       //   document.getElementsByClassName('riskFac').id = "high";
       // } else if (uvNum > 7 && uvNum <= 10 ) {
       //   document.getElementsByClassName('riskFac').id = "vHigh";
-      //   
-
+        
       if (uvNum <= 2) {
         $('.riskFac').css('background-color', 'green');
       } else if (uvNum > 2 && uvNum <= 5 ) {
