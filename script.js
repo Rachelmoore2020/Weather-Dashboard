@@ -82,7 +82,7 @@ function postList() {
    function uvData() {
 
 
-    var queryUV = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=bb55783c8d612e6ce0920236575bef0d";
+    var queryUV = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=bb55783c8d612e6ce0920236575bef0d";
 
         //  Here we run our AJAX call to the OpenWeatherMap API
 
