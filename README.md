@@ -1,4 +1,5 @@
 **Weather-Dashboard**<br>
+![weatherdashboard](https://user-images.githubusercontent.com/68473729/103313440-10eddc00-49ee-11eb-979a-d9b7b45f5fef.png)
 
 
 As a person who needs to find weather information for any city, I want to be able to search by city and find not only today's weather, but the weather forecast for the next five days.
@@ -10,7 +11,7 @@ the website includes other visual references in terms of weather icons that add 
 The Weather Dashboard can be tried here:<br>
 https://rachelmoore2020.github.io/Weather-Dashboard/.
 
-
+# Technologies Used
 DEMO<br>
 ![Weather](https://user-images.githubusercontent.com/68473729/96623472-6e242d80-12d9-11eb-84cb-a7ce10ebc405.gif)
 
