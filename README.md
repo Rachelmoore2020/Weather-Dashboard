@@ -12,7 +12,18 @@ The Weather Dashboard can be tried here:<br>
 https://rachelmoore2020.github.io/Weather-Dashboard/.
 
 # Technologies Used
-DEMO<br>
+HTML and CSS were used to build this app and the functionality relies heavily on javaScript.
+
+# Licence
+None
+
+# Demonstration
 ![Weather](https://user-images.githubusercontent.com/68473729/96623472-6e242d80-12d9-11eb-84cb-a7ce10ebc405.gif)
+
+# Contributors
+Rachel Moore. Github: RachelMoore2020. Email: rachelmoore6822@gmail.com
+
+
+
 
 
